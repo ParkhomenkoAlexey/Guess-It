@@ -9,23 +9,30 @@
 import WatchKit
 import Foundation
 
-
 class InterfaceController: WKInterfaceController {
-
+    @IBOutlet weak var myLabel: WKInterfaceLabel!
+    @IBOutlet weak var myButton: WKInterfaceButton!
+    
+    let movies = FilmModel.getFilms()
+    var element: FilmModel?
+    var timer: Timer?
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        // Configure interface objects here.
+        element = movies.randomElement()
+        self.myLabel.setText("")
+        self.myButton.setTitle(element?.emojis)
     }
     
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
+    @IBAction func refreshAction() {
+        myLabel.setText(element?.name)
+        
+        timer?.invalidate()
+        timer = Timer.scheduledTimer(withTimeInterval: 1.5, repeats: false, block: { (_) in
+            self.element = self.movies.randomElement()
+            self.myButton.setTitle(self.element?.emojis)
+            self.myLabel.setText("")
+        })
     }
-    
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-    }
-
 }

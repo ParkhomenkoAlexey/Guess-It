@@ -20,6 +20,7 @@
 		F0B8A8C12449D6FF008A8E58 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8A8C02449D6FF008A8E58 /* InterfaceController.swift */; };
 		F0B8A8C32449D6FF008A8E58 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8A8C22449D6FF008A8E58 /* ExtensionDelegate.swift */; };
 		F0B8A8C52449D700008A8E58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0B8A8C42449D700008A8E58 /* Assets.xcassets */; };
+		F0B8A920244A09FA008A8E58 /* FilmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B8A91F244A09FA008A8E58 /* FilmModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		F0B8A8C22449D6FF008A8E58 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		F0B8A8C42449D700008A8E58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0B8A8C62449D700008A8E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0B8A91F244A09FA008A8E58 /* FilmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 		F0B8A8BF2449D6FF008A8E58 /* Guess It WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F0B8A91F244A09FA008A8E58 /* FilmModel.swift */,
 				F0B8A8C02449D6FF008A8E58 /* InterfaceController.swift */,
 				F0B8A8C22449D6FF008A8E58 /* ExtensionDelegate.swift */,
 				F0B8A8C42449D700008A8E58 /* Assets.xcassets */,
@@ -300,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0B8A8C32449D6FF008A8E58 /* ExtensionDelegate.swift in Sources */,
+				F0B8A920244A09FA008A8E58 /* FilmModel.swift in Sources */,
 				F0B8A8C12449D6FF008A8E58 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
